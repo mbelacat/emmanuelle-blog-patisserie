@@ -96,17 +96,126 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* =========================================================================
+                              UTILITARY CLASSES
+============================================================================ */
+
+.black{
+  background-color: black;
+}
+.grey{
+  background-color: grey;
+}
+.yellow{
+  background-color: yellow;
+}
+.lightgrey{
+  background-color: lightgrey;
+}
+
+.flex{
+  display: flex;
+}
+
+.flexJCC{
+  display: flex;
+  justify-content: center;
+}
+.flexJCSA{
+  display: flex;
+  justify-content: space-around;
+}
+.flexJCSB{
+  display: flex;
+  justify-content: space-between;
+}
+.flexJCEnd{
+  display: flex;
+  justify-content: flex-end;
+}
+.display-none{
+  display: none;
+}
+.ai-center{
+  align-items: center;
+}
+.inline{
+  display: inline-flex;
+}
+/* =========================================================================
+                                COMMUN RULES
+============================================================================ */
 
 
 
 
+/* =========================================================================
+                                  header
+============================================================================ */
+
+
+header {
+  height: 25vh;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+.logo-login{
+  width: 90%;
+  height: 60%;
+  align-items: center;
+}
+.logo{
+  height: 60%;
+  width: 25%;
+}
+.login{
+  height: 60%;
+  width: 25%;
+}
+
+nav{
+  width: 90%;
+  height: 40%;
+  justify-content:flex-start;
+}
+
+@media screen and (min-width: 600px){
+ nav.tablette{
+   display: block;
+ }
+ nav.mobile{
+   display: none;
+ }
+ ul{
+   list-style-type: none;
+   width:60%;
+   justify-content: flex-start;
+   padding: 0;
+ }
+ .right ul{
+   display: block;
+   width: 70%;
+ }
+ aside a{
+   display: none;
+ }
+ .right{
+   width: 30%;
+ }
+}
+
+
+@media screen and (min-width: 1200px){
+
+}
 
 
 
 
-
-
-
+/* =========================================================================
+                                  banner
+============================================================================ */
 
 
 

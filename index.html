@@ -11,32 +11,51 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header>
-    <div>
-      <div class="logo">
+  <header class="black flexJCSA">
+    <div class="logo-login flexJCSB grey">
+      <aside class="left logo yellow">
         <img src="" alt="">
-      </div>
-      <div>
+      </aside>
+      <aside class="right flexJCEnd  ai-center login yellow">
         <!-- mobile -->
-        <a href=""><i> </i></a>
-
-      </div>
-    </div>
-    <nav>
-      <!-- dropdown -->
+        <a class="" href=""><i class="far fa-user"></i></a>
+        <!--tablette  -->
+        <ul class="display-none">
+          <li><a href=""><i class="far fa-user"></i></a></li>
+          <li>
+            <form class="flex">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </li>
+        </ul>
+      </aside>
+    </div >
+    <nav class="mobile grey flex ai-center" >
+      <i class="fas fa-caret-square-down"></i>
+    </nav>
+    <nav class="tablette ai-cente display-none yellow">
+      <ul class="inline flexJCSB grey ">
+        <li><a href="">lien 1</a></li>
+        <li><a href="">lien 2</a></li>
+        <li><a href="">lien 3</a></li>
+        <li><a href="">lien 4</a></li>
+      </ul>
     </nav>
   </header>
-  <section id="banner">
-    <h1> LES DELICES D'EMMANUELLE</h1>
-    <p>Plus on mand plus on grossi</p>
-  </section>
+
   <main>
+    <section id="banner">
+      <h1> LES DELICES D'EMMANUELLE</h1>
+      <p>Plus on mand plus on grossi</p>
+    </section>
+
     <section>
       <h2></h2>
       <div><img src="" alt=""> </div>
@@ -47,7 +66,7 @@
         <h4></h4>
         <div><img src="" alt=""></div>
         <p></p>
-        <ul>
+        <ul class="inline">
           <li><a href=""><i></i></a></li>
           <li><a href=""></a></li>
           <li><a href=""></a></li>
@@ -60,7 +79,7 @@
         <h4></h4>
         <div><img src="" alt=""></div>
         <p></p>
-        <ul>
+        <ul class="inline">
           <li><a href=""><i></i></a></li>
           <li><a href=""></a></li>
           <li><a href=""></a></li>
@@ -73,7 +92,7 @@
         <h4></h4>
         <div><img src="" alt=""></div>
         <p></p>
-        <ul>
+        <ul class="inline">
           <li><a href=""><i></i></a></li>
           <li><a href=""></a></li>
           <li><a href=""></a></li>
