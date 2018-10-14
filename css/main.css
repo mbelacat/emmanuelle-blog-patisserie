@@ -96,22 +96,430 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* =========================================================================
+                              UTILITARY CLASSES
+============================================================================ */
+.pink{
+  background-color: #f8a796;
+}
+.orange{
+  background-color: #fee8c9;
+}
+.lime{
+  background-color: lime;
+}
+.black{
+  background-color: black;
+}
+.grey{
+  background-color: grey;
+}
+.green{
+  background-color: #9ad0c2;
+}
+.yellow{
+  background-color: yellow;
+}
+.lightgrey{
+  background-color: lightgrey;
+}
+.flex{
+  display: flex;
+}
+.flex-dir-col{
+  flex-direction: column;
+}
+.flexJCC{
+  display: flex;
+  justify-content: center;
+}
+.flexJCSA{
+  display: flex;
+  justify-content: space-around;
+}
+.flexJCSB{
+  display: flex;
+  justify-content: space-between;
+}
+.flexJCEnd{
+  display: flex;
+  justify-content: flex-end;
+}
+.display-none{
+  display: none;
+}
+.ai-center{
+  align-items: center;
+}
+.inline{
+  display: inline-flex;
+}
+/* =========================================================================
+                                COMMUN RULES
+============================================================================ */
+body{
+  font-family: 'Josefin Slab', serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'Shadows Into Light', cursive;
+}
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 26px;
+}
+h2{
+  font-size: 22px;
+}
+h3{
+  font-size: 18px;
+}
+h4{
+  font-size: 12px;
+}
+ul li a{
+  color: white;
+  font-weight: bold;
+}
+ul li a:hover{
+  color: lightgrey;
+}
+@media screen and (min-width:600px) {
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  h4{
+    font-size: 20px;
+  }
+}
+/* =========================================================================
+                                  header
+============================================================================ */
+
+
+header {
+  height: 25vh;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.left img{
+  height: 80px;
+  width: 80px;
+}
+.logo-login{
+  width: 90%;
+  height: 60%;
+
+}
+.logo, .login{
+  height: 80%;
+  width: 15%;
+}
+
+.icon-login{
+  width: 9%;
+  height: 40%;
+
+}
+nav{
+  width: 90%;
+  height: 40%;
+  justify-content:flex-start;
+}
+
+@media screen and (min-width: 600px){
+
+ nav.tablette{
+   display: block;
+ }
+ nav.mobile{
+   display: none;
+ }
+ ul.tablette{
+   list-style-type: none;
+   width:60%;
+   height: 75%;
+   justify-content: flex-start;
+   padding: 0;
+ }
+ ul.tablette li{
+   height: 100%;
+   width: 23%;
+   margin: auto;
+   text-align: center;
+   margin: auto;
+ }
+ aside form{
+   display: block;
+   width: 40%;
+ }
+}
+
+
+@media screen and (min-width: 1200px){
+
+}
 
 
 
 
+/* =========================================================================
+                                  Section Image Text
+============================================================================ */
+
+
+#banner{
+  width: 100%;
+  height: 30vh;
+  flex-direction: column;
+  margin:auto;
+}
+#banner h1, #banner p{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px){
+  #banner{
+    background-image: url("../img/religieuse.jpg");
+    opacity: 0.8;
+    color: white;
+  }
+  #banner h1, #banner p{
+    width: 60%;
+    margin:auto;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  #banner{
+    margin:auto;
+  }
+  #banner h1{
+    width: 50%;
+    margin:auto;
+  }
+  #banner p{
+    width: 70%;
+  }
+}
+
+
+/* =========================================================================
+                                  MAIN
+============================================================================ */
+main {
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+@media  screen and (min-width: 600px){
+  main{
+    width: 80%;
+  }
+}
+
+@media  screen and (min-width: 1200px){
+  main{
+    width: 70%;
+  }
+}
 
 
 
 
+img{
+   width: 100%;
+   height: 60%;
+}
+.image{
+  overflow: hidden;
+}
+#call-to-action p{
+  align-items: center;
+  border-radius: 3px;
+}
+#call-to-action .image{
+
+}
+
+@media  screen and (min-width: 1200px) {
+  .cta-all{
+    /* can't use utilitary class flexJCSB in the HTML because call action don't appeare! */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+  }
+  .cta {
+    width: 20%;
+    height: 100%;
+  }
+
+  .cta a p{
+    width: 100%;
+    height: 75%;
+    text-align: center;
+  }
+  .cta p{
+    text-align: center;
+  }
+}
+
+/* ============================Section My Articles============================== */
+
+
+
+h3,h4{
+  width: 50%;
+  text-align: center;
+}
+
+#my-articles h3{
+  border-bottom: 5px ridge #f8a796;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article h4{
+  border-bottom: 5px ridge #fee8c9;
+}
+#ul-media{
+  width: 80%;
+}
+ ul{
+  width: 75%;
+  list-style:none;
+  justify-content: space-between;
+}
+ ul li{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 3px;
+  margin-left: 0.5em;
+}
+ ul li a i{
+  font-size: 25px;
+}
+#ul-media ul li{
+  width: 50px;
+  height: 40px;
+  margin: auto;
+}
+#ul-media ul li.see{
+  width: 60px;
+  height: 40px;
+}
+li a{
+  text-decoration: none;
+}
+
+@media  screen and (min-width: 600px){
+  h3, article{
+    width: 45%;
+  }
+  .my-articles{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .my-articles:last-child{
+    margin: auto;
+  } */
+}
+
+@media  screen and (min-width: 1200px){
+ h3, article{
+    width: 32%;
+  }
+  ul li{
+    width: 40px;
+  }
+}
 
 
 
 
+/* =========================================================================
+                                  FOOTER
+============================================================================ */
 
 
+footer{
+  width: 90%;
+  margin:auto;
+
+}
+
+footer p, #link-footer{
+  width: 75%;
+}
+#link-footer li{
+  width: 100%;
+}
+footer p{
+  text-align: center;
+}
+footer #link-footer{
+  width: 70%;
+  height: 30%;
+  padding: 0;
+  display: none;
+
+}
+#link-footer{
 
 
+}
+@media screen and (min-width: 600px) {
+  footer{
+    width: 100%;
+    height: 40vh;
+  }
+  footer p{
+    width: 50%;
+  }
+  footer ul{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer #link-footer{
+    display: flex;
+  }
+
+}
 
 /* ==========================================================================
    Helper classes

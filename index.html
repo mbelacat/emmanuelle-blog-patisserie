@@ -11,18 +11,158 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <header class=" flexJCSA pink">
+    <div class="logo-login flexJCSB ">
+      <aside class="left logo ">
+        <img src="img/logo-emmanuelle.png" width="50px" height="50px"alt="">
+      </aside>
+      <aside class="right flexJCEnd  ai-center login">
+        <!-- mobile -->
+        <div class="icon-login">
+          <a href=""><i class="far fa-user"></i></a>
+        </div>
+        <!--tablette  -->
+        <form class="display-none">
+          <input type="search" placeholder="Search">
+          <button class="" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </aside>
+    </div >
+    <nav class="mobile flex ai-center" >
+      <i class="fas fa-caret-square-down"></i>
+    </nav>
+    <nav class="tablette ai-center display-none">
+      <ul class="tablette inline flexJCSB">
+        <li class=""><a href="">Accueil</a></li>
+        <li class=""><a href="">Mes recettes</a></li>
+        <li class=""><a href="">Mes decouvertes</a></li>
+        <li class=""><a href="">Rencontres</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="banner" class="flexJCC">
+    <h1 class=""> LES DELICES D'EMMANUELLE</h1>
+    <p class="">Amoureux de la pâtisserie? Venez faire voyager vos papilles...</p>
+  </section>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <main>
+    <section id="call-to-action" class="">
+      <div class="cta-all  display-none">
+        <div class="cta ">
+          <a href="" ><p class="green flexJCC">Ma Newsletter</p></a>
+          <p>s'inscrire</p>
+        </div>
+        <div class="cta ">
+          <a href=""><p class="green flexJCC">Ma Newsletter</p></a>
+          <p>s'inscrire</p>
+        </div>
+        <div class="cta ">
+          <a href=""><p class="green flexJCC">Ma Newsletter</p></a>
+          <p>s'inscrire</p>
+        </div>
+      </div>
+      <p>Si la Religieuse a été inventée en 1856 par Frascati, alors célèbre pâtissier
+        de la capitale, ce n’est qu’à la fin du 20 ème siècle que notre petite gourmandise
+        se compose de deux choux superposés, se pare d’une collerette immaculée et revêt son
+        habit de nonne qui nous fait aujourd’hui encore, bien saliver.
+        Traditionnellement composée de pâte à choux, de crème pâtissière à la vanille,
+        au café ou au chocolat et glacée à l’aide de fondant, découvrons dès à présent certaine
+        s versions qui ne manquent pas de mordant
+      </p>
+      <div class="image flexJCC"><img src="img/chocolat.jpg" height="400" width="400" alt=""> </div>
+    </section>
+    <section id="my-articles">
+      <h3 class="">Blabla </h3>
+      <div class="my-articles">
+        <article class="">
+          <h4 class="">chocolat</h4>
+          <div class="image "><img src="img/chocolat.jpg" height="400" width="400" alt=""> </div>
+          <p>Apparu au milieu du 19 ème siècle, l’éclair, de forme déjà allongée,
+            était alors traditionnellement garni d’une crème chantilly au café.
+            Ce ne seront que quelques décennies plus tard que les éclairs seront
+            agrémentés de crème pâtissière aromatisée (chocolat ou café),
+          </p>
+          <div  id="ul-media"class="flexJCEnd ">
+            <ul class="inline ">
+              <li class="green"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li class="green"><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li class="green see"><a href="">Voir</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <h4>chocolat</h4>
+          <div class="image "><img src="img/chocolat.jpg" height="400" width="400" alt=""> </div>
+          <p>Apparu au milieu du 19 ème siècle, l’éclair, de forme déjà allongée,
+            était alors traditionnellement garni d’une crème chantilly au café.
+            Ce ne seront que quelques décennies plus tard que les éclairs seront
+            agrémentés de crème pâtissière aromatisée (chocolat ou café),
+          </p>
+          <div  id="ul-media"class="flexJCEnd ">
+            <ul class="inline ">
+              <li class="green"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li class="green"><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li class="green see"><a href="">Voir</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <h4>chocolat</h4>
+          <div class="image"><img src="img/chocolat.jpg" height="400" width="400" alt=""> </div>
+          <p>Apparu au milieu du 19 ème siècle, l’éclair, de forme déjà allongée,
+            était alors traditionnellement garni d’une crème chantilly au café.
+            Ce ne seront que quelques décennies plus tard que les éclairs seront
+            agrémentés de crème pâtissière aromatisée (chocolat ou café),
+          </p>
+          <div  id="ul-media"class="flexJCEnd ">
+            <ul class="inline ">
+              <li class="green"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li class="green"><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li class="green see"><a href="">Voir</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="orange flex-dir-col flexJCC ai-center">
+    <div id="link-footer"class="flexJCSB">
+        <ul class="">
+          <li class=""><a href="">coucou</a></li>
+          <li class=""><a href="">coucou</a></li>
+          <li class=""><a href="">Publications</a></li>
+        </ul>
+        <ul class="">
+          <li class=""><a href="">Mes decouvertes</a></li>
+          <li class=""><a href="">Panoramas</a></li>
+          <li class=""><a href="">Rencontres</a></li>
+        </ul>
+        <ul class="">
+          <li class=""><a href="">Contact</a></li>
+          <li class=""><a href="">Qui Suis-je?</a></li>
+          <li class=""><a href="">Stages</a></li>
+        </ul>
+    </div>
+
+    <p class="">
+      Blog crée par Mbela Mbemba
+    </p>
+
+    <ul class=" inline">
+      <li class=""><a href=""><i class="fab fa-twitter"></i></a></li>
+      <li class=""><a href=""><i class="fab fa-facebook-f"></i></a></li>
+      <li class=""><a href=""><i class="fab fa-instagram"></i></a></li>
+      <li class=""><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+    </ul>
+  </footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
