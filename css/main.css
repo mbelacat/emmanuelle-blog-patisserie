@@ -99,7 +99,9 @@ textarea {
 /* =========================================================================
                               UTILITARY CLASSES
 ============================================================================ */
-
+.lime{
+  background-color: lime;
+}
 .black{
   background-color: black;
 }
@@ -338,8 +340,8 @@ img{
   overflow: hidden;
 }
 #call-to-action p{
-
-
+  align-items: center;
+  border-radius: 3px;
 }
 #call-to-action .image{
 
@@ -359,11 +361,9 @@ img{
   }
 
   .cta a p{
-    width: 58%;
-    height: 50%;
+    width: 100%;
+    height: 75%;
     text-align: center;
-    margin: auto;
-    padding-top: 1em;
   }
   .cta p{
     text-align: center;
@@ -379,7 +379,6 @@ h3,h4{
   text-align: center;
 }
 article{
-  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,31 +387,31 @@ article{
 #ul-media{
   width: 80%;
 }
-ul{
+ ul{
   width: 75%;
   list-style:none;
   justify-content: space-between;
 }
-li{
+ ul li{
   align-items: center;
   justify-content: center;
   display: flex;
   border-radius: 3px;
   margin-left: 0.5em;
 }
-ul li a i{
+ ul li a i{
   font-size: 25px;
 }
-ul li{
+#ul-media ul li{
   width: 50px;
   height: 40px;
   margin: auto;
 }
-ul li.see{
+#ul-media ul li.see{
   width: 60px;
   height: 40px;
 }
-ul li a{
+li a{
   text-decoration: none;
 }
 
@@ -424,7 +423,6 @@ ul li a{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   /* .my-articles:last-child{
     margin: auto;
@@ -439,6 +437,61 @@ ul li a{
     width: 40px;
   }
 }
+
+
+
+
+/* =========================================================================
+                                  FOOTER
+============================================================================ */
+
+
+footer{
+  width: 90%;
+  margin:auto;
+
+}
+
+footer p, #link-footer{
+  width: 75%;
+}
+#link-footer li{
+  width: 30%;
+}
+footer p{
+  text-align: center;
+}
+footer #link-footer{
+  width: 70%;
+  height: 30%;
+  padding: 0;
+  display: none;
+
+}
+#link-footer{
+
+
+}
+@media screen and (min-width: 600px) {
+  footer{
+    width: 100%;
+    height: 55vh;
+  }
+  footer p{
+    width: 50%;
+  }
+  footer ul{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer #link-footer{
+    display: flex;
+  }
+
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
