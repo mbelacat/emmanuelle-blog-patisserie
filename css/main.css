@@ -118,7 +118,9 @@ textarea {
 .flex{
   display: flex;
 }
-
+.flex-dir-col{
+  flex-direction: column;
+}
 .flexJCC{
   display: flex;
   justify-content: center;
@@ -147,18 +149,51 @@ textarea {
 /* =========================================================================
                                 COMMUN RULES
 ============================================================================ */
+a{
+  text-decoration: none;
+}
 
 h1{
-  font-size: 20px;
+  font-size: 26px;
 }
 h2{
-  font-size: 16px;
+  font-size: 22px;
 }
 h3{
-  font-size: 12px;
+  font-size: 18px;
 }
 h4{
-  font-size: 8px;
+  font-size: 12px;
+}
+
+@media screen and (min-width:600px) {
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  h4{
+    font-size: 20px;
+  }
 }
 /* =========================================================================
                                   header
@@ -232,7 +267,7 @@ nav{
 
 
 /* =========================================================================
-                                  MAIN
+                                  Section Image Text
 ============================================================================ */
 
 
@@ -253,7 +288,7 @@ nav{
     background-image: url("../img/religieuse.jpg");
   }
   #banner h1, #banner p{
-    width: 70%;
+    width: 60%;
     margin:auto;
   }
 }
@@ -263,11 +298,11 @@ nav{
     margin:auto;
   }
   #banner h1{
-    width: 60%;
+    width: 50%;
     margin:auto;
   }
   #banner p{
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -277,34 +312,133 @@ nav{
 ============================================================================ */
 main {
   flex-direction: column;
-}
-#text-image{
   width: 90%;
-  flex-direction: column;
   margin: auto;
 }
+@media  screen and (min-width: 600px){
+  main{
+    width: 80%;
+  }
+}
+
+@media  screen and (min-width: 1200px){
+  main{
+    width: 70%;
+  }
+}
+
+
+
+
 img{
    width: 100%;
    height: 60%;
-
 }
 .image{
   overflow: hidden;
 }
-#text-image p{
- margin: auto;
+#call-to-action p{
+
 
 }
-#text-image .image{
+#call-to-action .image{
 
 }
 
 @media  screen and (min-width: 1200px) {
+  .cta-all{
+    /* can't use utilitary class flexJCSB in the HTML because call action don't appeare! */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+  }
+  .cta {
+    width: 20%;
+    height: 100%;
+  }
 
+  .cta a p{
+    width: 58%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+  }
+  .cta p{
+    text-align: center;
+  }
 }
 
+/* ============================Section My Articles============================== */
 
 
+
+h3,h4{
+  width: 50%;
+  text-align: center;
+}
+article{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ul-media{
+  width: 80%;
+}
+ul{
+  width: 75%;
+  list-style:none;
+  justify-content: space-between;
+}
+li{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 3px;
+  margin-left: 0.5em;
+}
+ul li a i{
+  font-size: 25px;
+}
+ul li{
+  width: 50px;
+  height: 40px;
+  margin: auto;
+}
+ul li.see{
+  width: 60px;
+  height: 40px;
+}
+ul li a{
+  text-decoration: none;
+}
+
+@media  screen and (min-width: 600px){
+  h3, article{
+    width: 45%;
+  }
+  .my-articles{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .my-articles:last-child{
+    margin: auto;
+  } */
+}
+
+@media  screen and (min-width: 1200px){
+ h3, article{
+    width: 32%;
+  }
+  ul li{
+    width: 40px;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
