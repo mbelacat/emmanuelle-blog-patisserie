@@ -99,6 +99,12 @@ textarea {
 /* =========================================================================
                               UTILITARY CLASSES
 ============================================================================ */
+.pink{
+  background-color: #f8a796;
+}
+.orange{
+  background-color: #fee8c9;
+}
 .lime{
   background-color: lime;
 }
@@ -109,7 +115,7 @@ textarea {
   background-color: grey;
 }
 .green{
-  background-color: green;
+  background-color: #9ad0c2;
 }
 .yellow{
   background-color: yellow;
@@ -151,6 +157,12 @@ textarea {
 /* =========================================================================
                                 COMMUN RULES
 ============================================================================ */
+body{
+  font-family: 'Josefin Slab', serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'Shadows Into Light', cursive;
+}
 a{
   text-decoration: none;
 }
@@ -167,7 +179,13 @@ h3{
 h4{
   font-size: 12px;
 }
-
+ul li a{
+  color: white;
+  font-weight: bold;
+}
+ul li a:hover{
+  color: lightgrey;
+}
 @media screen and (min-width:600px) {
   h1{
     font-size: 30px;
@@ -208,20 +226,26 @@ header {
   margin: auto;
   align-items: center;
 }
+
+.left img{
+  height: 80px;
+  width: 80px;
+}
 .logo-login{
   width: 90%;
   height: 60%;
-  align-items: center;
+
 }
-.logo{
-  height: 60%;
-  width: 45%;
-}
-.login{
-  height: 60%;
-  width: 45%;
+.logo, .login{
+  height: 80%;
+  width: 15%;
 }
 
+.icon-login{
+  width: 9%;
+  height: 40%;
+
+}
 nav{
   width: 90%;
   height: 40%;
@@ -229,9 +253,9 @@ nav{
 }
 
 @media screen and (min-width: 600px){
+
  nav.tablette{
    display: block;
-
  }
  nav.mobile{
    display: none;
@@ -250,14 +274,10 @@ nav{
    text-align: center;
    margin: auto;
  }
- .right ul{
+ aside form{
    display: block;
-   width: 70%;
+   width: 40%;
  }
- aside a{
-   display: none;
- }
-
 }
 
 
@@ -283,11 +303,14 @@ nav{
   width: 50%;
   text-align: center;
   margin: auto;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px){
   #banner{
     background-image: url("../img/religieuse.jpg");
+    opacity: 0.8;
+    color: white;
   }
   #banner h1, #banner p{
     width: 60%;
@@ -378,12 +401,18 @@ h3,h4{
   width: 50%;
   text-align: center;
 }
+
+#my-articles h3{
+  border-bottom: 5px ridge #f8a796;
+}
 article{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+article h4{
+  border-bottom: 5px ridge #fee8c9;
+}
 #ul-media{
   width: 80%;
 }
@@ -456,7 +485,7 @@ footer p, #link-footer{
   width: 75%;
 }
 #link-footer li{
-  width: 30%;
+  width: 100%;
 }
 footer p{
   text-align: center;
@@ -475,7 +504,7 @@ footer #link-footer{
 @media screen and (min-width: 600px) {
   footer{
     width: 100%;
-    height: 55vh;
+    height: 40vh;
   }
   footer p{
     width: 50%;
